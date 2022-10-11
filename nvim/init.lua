@@ -1,0 +1,5 @@
+require('settings')
+require('packages')
+require('lualine').setup()
+require("mason").setup()
+require('onedark').load()
