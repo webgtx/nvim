@@ -11,6 +11,10 @@ return require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
+  use {
     'VonHeikemen/lsp-zero.nvim',
     requires = {
       -- LSP Support
