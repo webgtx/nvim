@@ -1,7 +1,6 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  use 'navarasu/onedark.nvim'
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { {'nvim-lua/plenary.nvim'} }
@@ -33,6 +32,10 @@ return require('packer').startup(function(use)
       -- Snippets
       {'L3MON4D3/LuaSnip'},
       {'rafamadriz/friendly-snippets'},
+
+      -- Colorschemes
+      use 'navarasu/onedark.nvim',
+      use 'Yazeed1s/oh-lucy.nvim'
     }
   }
 end)

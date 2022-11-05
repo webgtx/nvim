@@ -1,0 +1,6 @@
+
+  FLAGS:
+    
+    -t --theme    # Choose colorscheme
+    -p --packer   # Install packer
+    -i --install  # Install everything out of box
