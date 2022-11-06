@@ -36,7 +36,8 @@ return require('packer').startup(function(use)
       -- Colorschemes
       use 'navarasu/onedark.nvim',
       use 'Yazeed1s/oh-lucy.nvim',
-      use 'Mofiqul/adwaita.nvim'
+      use 'Mofiqul/adwaita.nvim',
+      use 'tiagovla/tokyodark.nvim'
 
     }
   }

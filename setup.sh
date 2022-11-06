@@ -10,13 +10,16 @@ if [[ $1 = "--theme" ]] || [[ $1 = "-t" ]]; then
 
   case "$colorscheme" in
     1)  
-      echo "require('onedark').load()" > ./nvim/lua/colorscheme.lua
+      echo "vim.cmd[[colorscheme onedark]]" > ./nvim/lua/colorscheme.lua
     ;;
     2)
       echo "vim.cmd[[colorscheme oh-lucy]]" > ./nvim/lua/colorscheme.lua
     ;;
     3)
       echo "vim.cmd([[colorscheme adwaita]])" > ./nvim/lua/colorscheme.lua
+    ;;
+    4)
+      echo "vim.cmd([[colorscheme tokyodark]])" > ./nvim/lua/colorscheme.lua
     ;;
     *)
       echo "Undefined colorscheme, try something else"

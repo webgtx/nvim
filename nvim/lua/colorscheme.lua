@@ -1,1 +1,1 @@
-vim.cmd([[colorscheme adwaita]])
+vim.cmd[[colorscheme onedark]]
