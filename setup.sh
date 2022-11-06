@@ -5,7 +5,7 @@
 # https://webgtx.me
 
 if [[ $1 = "--theme" ]] || [[ $1 = "-t" ]]; then
-  printf "1) Onedark\n2) Oh-Lucy\n3) Adwaita\n"
+  printf "1) Onedark\n2) Oh-Lucy\n3) Adwaita\n4) Tokyodark\n"
   read -p "[ Choose colorscheme from list ]: " colorscheme
 
   case "$colorscheme" in
