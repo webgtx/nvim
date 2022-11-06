@@ -26,7 +26,7 @@ elif [[ $1 = "--packer" ]] || [[ $1 = "-p" ]]; then
 
 elif [[ $1 == "--install" ]] || [[ $1 == "-i" ]]; then 
   echo "Setting up onedark colorscheme by default..."
-  echo "require(onedark).load()" > ./nvim/lua/colorscheme.lua
+  echo "require('onedark').load()" > ./nvim/lua/colorscheme.lua
 
   if [[ -f "~/.local/share/nvim/site/pack/packer/start/packer.nvim" ]]; then
     . ./setup.sh -p & 
