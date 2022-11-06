@@ -4,22 +4,29 @@
 # https://github.com/webgtx
 # https://webgtx.me
 
+set_colorscheme() {
+  echo "vim.cmd[[colorscheme $1]]" > ./nvim/lua/colorscheme.lua
+}
+
 if [[ $1 = "--theme" ]] || [[ $1 = "-t" ]]; then
-  printf "1) Onedark\n2) Oh-Lucy\n3) Adwaita\n4) Tokyodark\n"
+  printf "1) Onedark\n2) Oh-Lucy\n3) Adwaita\n4) Tokyodark\n5) Github\n"
   read -p "[ Choose colorscheme from list ]: " colorscheme
 
   case "$colorscheme" in
     1)  
-      echo "vim.cmd[[colorscheme onedark]]" > ./nvim/lua/colorscheme.lua
+      set_colorscheme onedark 
     ;;
     2)
-      echo "vim.cmd[[colorscheme oh-lucy]]" > ./nvim/lua/colorscheme.lua
+      set_colorscheme oh-lucy
     ;;
     3)
-      echo "vim.cmd([[colorscheme adwaita]])" > ./nvim/lua/colorscheme.lua
+      set_colorscheme adwaita
     ;;
     4)
-      echo "vim.cmd([[colorscheme tokyodark]])" > ./nvim/lua/colorscheme.lua
+      set_colorscheme tokyodark
+    ;;
+    5)
+      set_colorscheme github_*
     ;;
     *)
       echo "Undefined colorscheme, try something else"

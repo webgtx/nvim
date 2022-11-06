@@ -37,7 +37,8 @@ return require('packer').startup(function(use)
       use 'navarasu/onedark.nvim',
       use 'Yazeed1s/oh-lucy.nvim',
       use 'Mofiqul/adwaita.nvim',
-      use 'tiagovla/tokyodark.nvim'
+      use 'tiagovla/tokyodark.nvim',
+      use 'projekt0n/github-nvim-theme'
 
     }
   }
