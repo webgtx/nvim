@@ -5,7 +5,7 @@
 # https://webgtx.me
 
 if [[ $1 = "--theme" ]] || [[ $1 = "-t" ]]; then
-  printf "1) Onedark\n2) Oh-Lucy\n"
+  printf "1) Onedark\n2) Oh-Lucy\n3) Adwaita\n"
   read -p "[ Choose colorscheme from list ]: " colorscheme
 
   case "$colorscheme" in
@@ -14,6 +14,9 @@ if [[ $1 = "--theme" ]] || [[ $1 = "-t" ]]; then
     ;;
     2)
       echo "vim.cmd[[colorscheme oh-lucy]]" > ./nvim/lua/colorscheme.lua
+    ;;
+    3)
+      echo "vim.cmd([[colorscheme adwaita]])" > ./nvim/lua/colorscheme.lua
     ;;
     *)
       echo "Undefined colorscheme, try something else"
