@@ -33,13 +33,17 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},
       {'rafamadriz/friendly-snippets'},
 
-      -- Colorschemes
-      use 'navarasu/onedark.nvim',
-      use 'Yazeed1s/oh-lucy.nvim',
-      use 'Mofiqul/adwaita.nvim',
-      use 'tiagovla/tokyodark.nvim',
-      use 'projekt0n/github-nvim-theme'
-
     }
   }
+
+  -- Colorschemes
+  use 'navarasu/onedark.nvim'
+  use 'Yazeed1s/oh-lucy.nvim'
+  use 'Mofiqul/adwaita.nvim'
+  use 'tiagovla/tokyodark.nvim'
+  use 'projekt0n/github-nvim-theme'
+
+  -- Others 
+  use "ellisonleao/glow.nvim"
+
 end)
