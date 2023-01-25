@@ -5,7 +5,9 @@
 # https://webgtx.me
 
 set_colorscheme() {
-  echo "vim.cmd[[colorscheme $1]]" > ./nvim/lua/colorscheme.lua
+  if [[ ! -d ~/config/nvim/lua ]]; then
+    echo "vim.cmd[[colorscheme $1]]" > ~/.config/nvim/lua/colorscheme.lua
+  fi
 }
 
 if [[ $1 = "--theme" ]] || [[ $1 = "-t" ]]; then
