@@ -1,1 +1,1 @@
-vim.cmd[[colorscheme github_*]]
+vim.cmd[[colorscheme slate]]
