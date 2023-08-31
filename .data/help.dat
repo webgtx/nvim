@@ -1,6 +1,8 @@
-
+  webgtx/nvim
+  
   FLAGS:
     
     -t --theme    # Choose colorscheme
-    -p --packer   # Install packer
-    -i --install  # Install everything out of box
+    -c --clear    # Clear all configs
+    -h --help     # Print this text
+
